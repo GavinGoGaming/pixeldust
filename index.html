@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixeldust</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <button data-sel="pencil" class="sel-tool btn-green">Pencil</button>
+        <button data-sel="big" class="sel-tool">Big</button>
+        <button data-sel="eraser" class="sel-tool">Eraser</button>
+        <button data-sel="colorpicker" class="sel-tool">Colorpicker</button>
+        <div class="color color-sel-box">
+            <i class="fa-solid fa-question"></i>
+            <input type="color" id="sel-color">
+        </div>
+    </div>
+    <div class="canvas-box">
+        <div class="vcontrols">
+            <div class="color color-sel-box preset-color" data-col="tomato"></div>
+            <div class="color color-sel-box preset-color" data-col="red"></div>
+            <div class="color color-sel-box preset-color" data-col="orange"></div>
+            <div class="color color-sel-box preset-color" data-col="yellow"></div>
+            <div class="color color-sel-box preset-color" data-col="mediumseagreen"></div>
+            <div class="color color-sel-box preset-color" data-col="green"></div>
+            <div class="color color-sel-box preset-color" data-col="lime"></div>
+            <div class="color color-sel-box preset-color" data-col="aqua"></div>
+            <div class="color color-sel-box preset-color" data-col="slateblue"></div>
+            <div class="color color-sel-box preset-color" data-col="lightblue"></div>
+            <div class="color color-sel-box preset-color" data-col="blue"></div>
+            <div class="color color-sel-box preset-color" data-col="purple"></div>
+        </div>
+        <canvas width="320" height="320" id="pixelCanvas"></canvas>
+        <div class="vcontrols"></div>
+    </div>
+    <div class="controls">
+        <button class="clear btn-red">Clear Canvas</button>
+        <button class="fill">Fill (All)</button>
+        <button class="fill-empty">Fill (Empty)</button>
+        <a href="#" target="_new" id="dl" download="final.png">Download</a>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
